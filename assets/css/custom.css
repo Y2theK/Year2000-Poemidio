@@ -1,52 +1,180 @@
-
-html{
+html {
   scroll-behavior: smooth;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 8px;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: gray;
+  background: var(--sec-color);
 }
-
-*{
+:root {
+  --bg-color: #dee2ff;
+  --btn-color: #cbc0d3;
+  --first-color: #fff;
+  --sec-color: #8e9aaf;
+}
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-body{
+body {
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--bg-color);
+}
+/* nav-bar */
+nav {
+  background-color: var(--bg-color);
+}
+.navbar-brand {
+  color: #000;
+}
+.nav-link {
+  color: #011627;
+  font-size: 1rem;
+  font-family: Ubuntu, "Helvetica Neue", sans-serif;
+}
+.navbar-toggler:focus,
+.btn:focus,
+.form-control:focus {
+  /* outline: none; */
+  box-shadow: none;
+}
+.form-control {
+  padding: 10px;
+}
+/* home */
+.carousel-item img {
+  width: 100%;
+  height: 90vh;
+}
+/* about */
+
+.about,
+.ebooks,
+.poems,
+.team,
+.contact {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about > *,
+.ebooks > *,
+.contact > * {
+  margin-bottom: 30px;
+}
+.section-title {
+  display: inline-block;
+  font-size: 3rem;
+  color: #000;
+  position: relative;
+}
+.section-title::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 8%;
+  background-color: yellow;
+  bottom: -5px;
+
+  left: 30px;
+}
+.about-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* width: 400px;
+  height: 400px; */
+}
+.about-img img {
+  width: 70%;
+  height: auto;
+}
+.about-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-text p {
+  color: var(--sec-color);
+}
+/* ebooks */
+.ebooks {
+  background-color: var(--first-color);
+}
+.mybtn:hover {
+  background-color: var(--bg-color);
+  border-color: var(--bg-color);
+  color: #000;
+}
+/* poems */
+.poems {
+  background-color: var(--bg-color);
+}
+/* team */
+.team {
+  background-color: var(--first-color);
+}
+/* contact */
+.contact {
+  background-color: var(--bg-color);
+}
+/* footer */
+.footer {
+  background-color: var(--first-color);
+  /* height: 200px; */
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.footer .row {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.footer .row div {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+}
+.links a {
+  text-decoration: none;
+  margin: 5px 0px;
+  color: var(--sec-color);
+}
+.map {
+  width: 100%;
+  min-height: 40vh;
+}
+.quote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.quote pre {
+  font-size: 1.5rem;
+  list-style: 200%;
+}
+.butt {
+  /*position: relative;*/
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
 }
 
-.projName{
-	font-variant: small-caps;
-
-	/*font-weight: bold;*/
-}
-
-.map{
-		width: 100%;
-		min-height: 40vh;
-	}
-.quote{
-	position: relative;
-	margin-top: -400px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.butt{
-	/*position: relative;*/
-	margin-top: 50px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 30px;
-	
-}
-
-pre{
-	text-align: justify;
+pre {
+  text-align: justify;
 }

@@ -25,22 +25,23 @@
 
 
 <body>
-	<p class="bg-dark text-center m-0 text-light">Enterprised by "Year 2000 Poem Studio"</p>
 	
 	<!-- Start Navbar  -->
-	<nav class="navbar navbar-expand-md bg-light navbar-light sticky-top ">
+	<nav class="navbar navbar-expand-md  sticky-top p-3 shadow-md">
 		
 			<!-- company logo -->
-		<a href="#" class="navbar-brand mx-3"><i class="fab fa-studiovinari fa-2x text-info"></i><span class="mx-2 projName " style="font-size: 25px;">Poemidio</span></a>
-		<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navItem"><span class="navbar-toggler-icon"></span></button>
+		<a href="#" class="navbar-brand mx-3" ><span>Poemidio</span></a>
+		<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navItem"><i class="fas fa-times " id="nav-close"></i><i class="fas fa-bars" id="nav-hambuger"></i></button>
+		
 			<!-- navigator -->
 		<div class="navbar-collapse collapse justify-content-end" id="navItem">
-			<ul class="navbar-nav mx-5">
-			<li class="nav-item"><a href="#home" class="nav-link text-uppercase text-danger fw-bold">H0me</a></li>
-			<li class="nav-item"><a href="#ebooks" class="nav-link text-uppercase text-dark fw-bold">Eb00ks</a></li>
-			<li class="nav-item"><a href="#poems" class="nav-link text-uppercase text-warning fw-bold">P0ems Cards</a></li>
-			<li class="nav-item"><a href="#team" class="nav-link text-uppercase text-info fw-bold">Ab0ut</a></li>
-			<li class="nav-item"><a href="#contact" class="nav-link text-uppercase text-success fw-bold">C0ntact</a></li>
+			<ul class="navbar-nav mx-5 d-flex align-items-center">
+			<li class="nav-item"><a href="#home" class="nav-link ">Home</a></li>
+			<li class="nav-item"><a href="#about" class="nav-link" >About</a></li>
+			<li class="nav-item"><a href="#ebooks" class="nav-link">Ebooks</a></li>
+			<li class="nav-item"><a href="#poems" class="nav-link">Poems Cards</a></li>
+			<li class="nav-item"><a href="#team" class="nav-link">Team</a></li>
+			<li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
 		</ul>
 	
 		
@@ -48,70 +49,140 @@
 		</div>
 		
 	</nav>
-
+	
 	<!-- Start banner section -->
 	<section id="home">
 		<!-- <div class="container-fluid"> -->
-			<div class="bg-light" style="height: 90vh;">
-				<img src="./assets/img/Meditaudios.gif" height="100%" width="100%" class="m-0">
-				<div class="quote">
-					<div>
-						<h1 class="text-center display-4 text-light">" What is this life if full of care, <br/>we have no time to stand and stare. "</h1><br/>
-					<p class="text-center text-light lead">H.V Davies</p>
-					</div>
-
-				</div>
+			<!-- <div class="bg-light" style="height: 90vh;">
+				<img src="./assets/img/animewinter2.jpg" height="100%" width="100%" class="m-0">
+				
 				<div class=" butt">
 					<a href="#" class="btn btn-primary btn-lg m-3 rounded-0" data-bs-toggle="modal" data-bs-target="#logInModal">Login Here</a>
 				<a href="#" class="btn btn-outline-light btn-lg m-3 rounded-0 text-danger">Register Here</a>
 				</div>
-			</div>
+			</div> -->
 		<!-- </div> -->
+		<!-- start home section -->
+		<div id="carousel-slide" class="carousel slide carousel-dark" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+			  <button type="button" data-bs-target="#carousel-slide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			  <button type="button" data-bs-target="#carousel-slide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			  <button type="button" data-bs-target="#carousel-slide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+			  <div class="carousel-item active ">
+			
+					<div class="quote">
+						<div>
+						<pre class="text-center text-light">" What is this life 
+if full of care, 
+we have no time 
+to stand and stare... "</pre><br/>
+						<p class="text-center text-light lead">H.V Davies</p>
+						</div>
+	
+					</div> 
+					<img src="https://images.unsplash.com/photo-1533892743580-890e5b193113?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="d-block" alt="...">
+
+			
+		
+			</div>
+			  <div class="carousel-item">
+				<div class="quote">
+					<div>
+					<pre class="text-center ">" ငါကလဲခက်တယ် 
+						ကဗျာတစ်ပုဒ်နဲ့ နေမဝင်အင်ပါယာ 						
+ဘယ်ဟာယူမလဲ မေးလာခဲ့ရင်
+ဒုတိယအရာကို ငါငြင်းတယ်..." </pre><br/>
+					<p class="text-center text-light lead">တာရာမင်းဝေ</p>
+					</div>
+
+				</div> 
+				<img src="https://images.unsplash.com/photo-1485765264175-4cc94fa15c57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1029&q=80" class="d-block" alt="...">
+				
+			</div>
+			  <div class="carousel-item">
+				<div class="quote">
+					<div>
+					<pre class="text-center text-light ">" Hell is empty 
+and 
+all the devils 
+are here..." </pre><br/>
+					<p class="text-center text-light lead">William Shakespeare</p>
+					</div>
+
+				</div> 
+				<img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" class="d-block" alt="...">
+			  </div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carousel-slide" data-bs-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carousel-slide" data-bs-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Next</span>
+			</button>
+		  </div>
 	</section>
 
+	<!-- start about section -->
+<section id="about">
+	<div class="container-fluid about">
+		<h1 class="section-title">About Us</h1>
+		<div class="row">
+			<div class="col-md-6 about-img">
+				<img src="assets/img/animeholding.png" alt="about-img"  >
+			</div>
+			<div class="col-md-6  about-text mt-5 px-5">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aut maiores voluptatum provident ipsam excepturi quod nulla deserunt dicta architecto minus facere, ipsum magnam quia quasi labore a. Eligendi, sit! piditate odit, voluptate sit nulla consequatur placeat, in nam perspiciatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus architecto maiores dicta facere ea, dolor repudiandae eum quibusdam incidunt, laudantium fuga recusandae eius molestias neque iste dolorum doloribus eaque molestiae.</p>
+			</div>
+		</div>
+	</div>
+</section>
 
 
 	<!-- Start Ebooks_poem section -->
 	<section id="ebooks">
-		<div class="container-fluid bg-secondary">
+		<div class="container-fluid ebooks">
 			<!-- start title -->
-			<div class="col-12 text-center">
-				<h3 class="pt-4 display-5 text-light">EBooks</h3>
-				<p class="text-white lead">Download Free Version Year 2000 Poems </p>
+			
+				<h1 class="section-title">EBooks</h1>
+				<p class="text-center lead">Download Free Version Year 2000 Poems </p>
 				
 
-			</div>
+		
 			<!-- end title -->
 			<div class="row">
-				<div class="col-lg-3 col-md-4 col-sm-10 mx-auto my-4">
+				<div class=" col-md-4 col-sm-10 mx-auto my-4">
 				<img src="./assets/img/pc1.jpg" class="img-thumbnail">
 				<div class="d-flex justify-content-center align-items-center">
-				<a href="#" class="btn btn-outline-warning rounded-0 mt-3">Download</a></div>
+				<a href="#" class="btn btn-warning rounded-0 mt-3 mybtn">Download</a></div>
 				</div>
-				<div class="col-lg-3 col-md-4 col-sm-10 mx-auto my-4">
+				<div class=" col-md-4 col-sm-10 mx-auto my-4">
 				<img src="./assets/img/pc2.jpg" class="img-thumbnail">
 				<div class="d-flex justify-content-center align-items-center">
-				<a href="#" class="btn btn-outline-warning rounded-0 mt-3">Download</a></div>
+				<a href="#" class="btn btn-warning  rounded-0 mt-3 mybtn">Download</a></div>
 				</div>
-				<div class="col-lg-3 col-md-4 col-sm-10 mx-auto my-4">
+				<div class=" col-md-4 col-sm-10 mx-auto my-4">
 				<img src="./assets/img/pc3.jfif" class="img-thumbnail">
 				<div class="d-flex justify-content-center align-items-center">
-				<a href="#" class="btn btn-outline-warning rounded-0 mt-3">Download</a></div>
+				<a href="#" class="btn btn-warning rounded-0 mt-3 mybtn">Download</a></div>
 				</div>
-				<div class="col-lg-3 col-md-4 col-sm-10 mx-auto my-4">
+				<div class=" col-md-4 col-sm-10 mx-auto my-4">
 				<img src="./assets/img/pc4.jfif" class="img-thumbnail">
 				<div class="d-flex justify-content-center align-items-center">
-				<a href="#" class="btn btn-outline-warning rounded-0 mt-3">Download</a></div>
+				<a href="#" class="btn btn-warning rounded-0 mt-3 mybtn">Download</a></div>
 				</div>
-				<div class="col-lg-3 col-md-4 col-sm-10 mx-auto my-4">
+				<div class=" col-md-4 col-sm-10 mx-auto my-4">
 				<img src="./assets/img/pc5.jpg" class="img-thumbnail">
 				<div class="d-flex justify-content-center align-items-center">
-				<a href="#" class="btn btn-outline-warning rounded-0 mt-3">Download</a></div>
+				<a href="#" class="btn btn-warning rounded-0 mt-3 mybtn">Download</a></div>
 				</div>
-				<div class="col-lg-3 col-md-4 col-sm-10 mx-auto my-4">
+				<div class=" col-md-4 col-sm-10 mx-auto my-4">
 				<img src="./assets/img/pc7.jfif" class="img-thumbnail" >
 				<div class="d-flex justify-content-center align-items-center">
-				<a href="#" class="btn btn-outline-warning rounded-0 mt-3">Download</a></div>
+				<a href="#" class="btn btn-warning rounded-0 mt-3 mybtn">Download</a></div>
 				</div>
 
 			</div>
@@ -131,22 +202,22 @@
 
 	<!-- Start Porjects Section -->
 	<section class="" id="poems">
-		<div class="container-fluid bg-dark">
+		<div class="container-fluid poems">
 			<!-- start title -->
 			<div class="col-12 text-center">
-				<h3 class="text-light pt-4 display-5">Poem Cards</h3>
-				<p class="text-muted lead">Feel Free to Read and Stay Connected !</p>
+				<h3 class="section-title">Poem Cards</h3>
+				<p class="text-muted lead mt-3">Feel Free to Read and Stay Connected !</p>
 			</div>
 			<!-- end title -->
 
 			<!-- page 1  -->
 			<div class="row" id="page1">
 				<div class="col-lg-4 col-md-6 col-sm-10 mx-auto d-flex justify-content-center align-items-center my-4">
-					<div class="card rounded-0" >
-						<img src="./assets/img/friend.jpg" height="300px">
+					<div class="card rounded-0 " >
+						<img src="./assets/img/friend.jpg" width="300px" height="">
 						<div class="card-body">
-						
-						<div class="btn btn-outline-dark rounded-0">
+							
+						<div class="btn btn-outline-dark rounded-0 mybtn">
 <pre class="mt-2">
 <h6 class="mt-2"><b>သူငယ်ချင်း</b></h6>" အဖြူအစိမ်းခုနှစ်မှာ
   ဇာတ်လမ်းကစတယ်
@@ -178,11 +249,11 @@
 				</div>
 
 				<div class="col-lg-4 col-md-6 col-sm-10 mx-auto d-flex justify-content-center align-items-center my-4">
-					<div class="card rounded-0 bg-light" >
+					<div class="card rounded-0 " >
 						<img src="./assets/img/animewinter2.jpg" width="300px">
 						<div class="card-body">
 						
-						<div class="btn btn-outline-dark rounded-0 d-flex justify-content-center align-items-center">
+						<div class="btn btn-outline-dark rounded-0 d-flex justify-content-center align-items-center mybtn">
 <pre class="mt-2">
 <h6 class="mt-2"><b>  ဆောင်း</b></h6>" ကိုယ်သိတဲ့ 
   ဆောင်းရဲ့ သင်္ကေတဟာ
@@ -221,10 +292,10 @@
 
 				<div class="col-lg-4 col-md-6 col-sm-10 mx-auto d-flex justify-content-center align-items-center my-4">
 					<div class="card rounded-0" >
-						<img src="./assets/img/animeholding.png" height="250px">
+						<img src="./assets/img/animeholding.png" width="300px">
 						<div class="card-body">
 						
-						<div class="btn btn-outline-dark rounded-0">
+						<div class="btn btn-outline-dark rounded-0 mybtn">
 <pre class="mt-2">
 <h6 class="mt-2"><b> Day 909</b></h6>   "ရန်ဖြစ်တိုင်း
     တိုးတိုးကလေး ကဗျာရေးပြီး
@@ -273,7 +344,7 @@
 						<img src="./assets/img/gazinggril2.jpg" height="250px">
 						<div class="card-body">
 						
-						<div class="btn btn-outline-dark rounded-0">
+						<div class="btn btn-outline-dark rounded-0 mybtn">
 <pre class="mt-2">
 <h6 class="mt-2"><b> စပျစ်ချို</b></h6>" ချိုတယ်ထင်ပေမဲ့ 
   ငေးပဲကြည့်တော့မဲ့ 
@@ -305,11 +376,11 @@
 				</div>
 
 				<div class="col-lg-4 col-md-6 col-sm-10 mx-auto d-flex justify-content-center align-items-center my-4">
-					<div class="card rounded-0 bg-light" >
-						<img src="./assets/img/wintering.gif" >
+					<div class="card rounded-0" >
+						<img src="./assets/img/wintering.gif" width="300px" >
 						<div class="card-body">
 						
-						<div class="btn btn-outline-dark rounded-0 d-flex justify-content-center align-items-center">
+						<div class="btn btn-outline-dark rounded-0 d-flex justify-content-center align-items-center mybtn">
 <pre class="mt-2">
 <h6 class="mt-2"><b>အလွမ်းစေမင်း</b></h6>" ဆောင်းရိပ်ဝေ၍ မြူလွှမ်းချိန်မှာ
   ပြုတ်ခါပျက်ကျ မြေသို့ခသည်
@@ -351,10 +422,10 @@
 
 				<div class="col-lg-4 col-md-6 col-sm-10 mx-auto d-flex justify-content-center align-items-center my-4">
 					<div class="card rounded-0" >
-						<img src="./assets/img/animeboy.jpg" height="300px">
+						<img src="./assets/img/animeboy.jpg" width="300px" height="300px">
 						<div class="card-body">
 						
-						<div class="btn btn-outline-dark rounded-0 d-flex justify-content-center align-items-center">
+						<div class="btn btn-outline-dark rounded-0 d-flex justify-content-center align-items-center mybtn">
 <pre class="mt-2">
 <h6 class="mt-2"><b> ပုံစံခွက်</b></h6>" လက်ညိုးထိုးမြန်သူသာ
   အမှန်ဘက်ကချည်းဆိုရင်
@@ -399,7 +470,7 @@
 						<!-- <img src="../assets/img/friend.jpg" height="250px"> -->
 						<div class="card-body">
 						
-						<div class="btn btn-outline-dark rounded-0 justify-content-center align-items-center">
+						<div class="btn btn-outline-dark rounded-0 mybtn d-flex">
 <pre class="mt-2">
 <h6 class="mt-2"><b>  Prisoner</b></h6>" Livin' in a cell
   Nothin' have to sell
@@ -422,7 +493,7 @@
   Let me help out from here
   Then we will go grab some beer.
 
-				*Y2K*"
+	*Y2K*"
 
 			</pre>
 						</div>
@@ -449,18 +520,19 @@
 					</div>
 				</div>
 
-				<div class="col-lg-4 col-md-6 col-sm-10  mx-auto d-flex justify-content-center align-items-center my-4">
-					<div class="card rounded-0 bg-light" >
-						<img src="./assets/img/hidingFromPeople.gif" height="250px">
+				<div class="col-lg-4 col-md-6 col-sm-10 mx-auto d-flex justify-content-center align-items-center my-4">
+					<div class="card rounded-0 " >
+						<img src="./assets/img/hidingFromPeople.gif" height="250px" width="300px">
 						<div class="card-body">
 						
-						<div class="btn btn-outline-dark rounded-0 d-flex justify-content-center align-items-center">
+						<div class="btn btn-outline-dark rounded-0  mybtn">
 <pre class="mt-2">
 <h6 class="mt-2"><b>  ဘဝကိုငါဘဝင်မကျ</b></h6>" ပြဿနာဟာ 
   ပုန်းနေတဲ့ငါ့ကို မီးထွန်းရှာတယ်
-  လူမမှန်တွေကြားရောက်နေတဲ့ငါဟာ မူမမှန်တော့..."
+  လူမမှန်တွေကြားရောက်နေတဲ့ငါဟာ
+  မူမမှန်တော့..."
 
-			   	*Y2K*</pre>
+			*Y2K*</pre>
 						</div>
 						<hr/>
 						<div class="float-start">
@@ -488,10 +560,10 @@
 
 				<div class="col-lg-4 col-md-6 col-sm-10 mx-auto d-flex justify-content-center align-items-center my-4">
 					<div class="card rounded-0" >
-						<img src="./assets/img/mikasa.jpeg" width="350px">
+						<img src="./assets/img/mikasa.jpeg" width="300px">
 						<div class="card-body">
 						
-						<div class="btn btn-outline-dark rounded-0 d-flex justify-content-end align-items-center">
+						<div class="btn btn-outline-dark rounded-0 mybtn">
 <pre class="mt-2">
 <h6 class="mt-2"><b>  ရှုံးသူ</b></h6>" မင်းကိုချစ်မိတာ
   ကိုယ့်ဝဋ်နာကံနာပဲ
@@ -541,10 +613,10 @@
 			<div class="row" id="page4">
 				<div class="col-lg-4 col-md-6 col-sm-10 mx-auto d-flex justify-content-center align-items-center my-4">
 					<div class="card rounded-0" >
-						<img src="./assets/img/animefighting.jpg" height="250px">
+						<img src="./assets/img/animefighting.jpg" height="250px" width="300px">
 						<div class="card-body">
 						
-						<div class="btn btn-outline-dark rounded-0">
+						<div class="btn btn-outline-dark rounded-0 mybtn">
 <pre class="mt-2">
 <h6 class="mt-2"><b>မတည့်အတူ</b></h6>" မတည့်အတူနေ
   မမြင်ရင်ချောင်းကြည့်ချင်ကြတယ်
@@ -577,10 +649,10 @@
 
 				<div class="col-lg-4 col-md-6 col-sm-10 mx-auto d-flex justify-content-center align-items-center my-4">
 					<div class="card rounded-0 bg-light" >
-						<img src="./assets/img/animenurse2.jpg" height="400px" >
+						<img src="./assets/img/animenurse2.jpg" height="300px" >
 						<div class="card-body">
 						
-						<div class="btn btn-outline-dark rounded-0 d-flex justify-content-center align-items-center">
+						<div class="btn btn-outline-dark rounded-0 d-flex justify-content-center align-items-center mybtn">
 <pre class="mt-2">
 <h6 class="mt-2"><b>ဒီကောင်နဲ့ နိုက်တင်‌‌ဂေး</b></h6>" ဘယ်ဘက်ရင်အုံအောင့်အောင့်နေတယ် ဆရာမ"
   ကိုကို လို့နှစ်ခေါက်ခေါ်ပေးပါ
@@ -614,14 +686,14 @@
 
 				<div class="col-lg-4 col-md-6 col-sm-10 mx-auto d-flex justify-content-center align-items-center my-4">
 					<div class="card rounded-0" >
-						<img src="./assets/img/animespace.jpg"  height="350px">
+						<img src="./assets/img/animespace.jpg"  height="300px">
 						<div class="card-body">
 						
-						<div class="btn btn-outline-dark rounded-0 d-flex justify-content-center align-items-center">
+						<div class="btn btn-outline-dark rounded-0 d-flex justify-content-center align-items-center mybtn">
 <pre class="mt-2">
 <h6 class="mt-2"><b> တစ္ဆေတွေရဲ့ည</b></h6>" နတ်ဆိုးကိုပြေးဖက် ကိုယ့်ကိုယ်ကိုပဲ
   စိတ်ကူးနဲ့သတ်ပြီး သေကြည့်လိုက်တယ်
-  Fuckkkkkkkkkkkkkkkkk..........
+  Fuckkkkkkkkkkkkkkkkk........
   ကမ္ဘာကြီးဟာအခြားဂြိုလ်တစ်ခုရဲ့ ငရဲပဲ..."
 					
 			*Y2K*</pre>
@@ -659,12 +731,12 @@
 		<!-- swich to next btns -->
 			<div class="d-flex justify-content-center align-items-center py-4" >
 			<div class="btn-group">
-			<a href="#" class="btn text-light"><i class="fas fa-angle-double-left"></i></a>
-			<a class="btn btn-md text-light" id="p1">1</a>
-			<a class="btn btn-md text-light" id="p2">2</a>
-			<a class="btn btn-md text-light" id="p3">3</a>
-			<a class="btn btn-md text-light" id="p4">4</a>
-			<button class="btn text-light" id="next"><i class="fas fa-angle-double-right"></i></button>>
+			<a href="#" class="btn"><i class="fas fa-angle-double-left"></i></a>
+			<a class="btn btn-md  " id="p1">1</a>
+			<a class="btn btn-md " id="p2">2</a>
+			<a class="btn btn-md " id="p3">3</a>
+			<a class="btn btn-md " id="p4">4</a>
+			<button class="btn " id="next"><i class="fas fa-angle-double-right"></i></button>
 			</div>
 			
 			</div>
@@ -676,10 +748,10 @@
 
 	<!-- Start About Section -->
 	<section class="bg-secondary" id="team">
-		<div class="container-fluid">
+		<div class="container-fluid team">
 			<!-- Start title -->
 			<div class="col-12 text-center">
-				<h3 class="text-light pt-4 display-5">Teams</h3>
+				<h3 class="section-title">Teams</h3>
 					<p class="text-white lead">Meet our founder team members</p>
 			</div>
 			<!-- end title -->
@@ -689,35 +761,35 @@
 				<img src="./assets/img/team/y2k4.jpg" class="img-thumbnail" alt="y2k" />
 				<div class="card-body">
 					<div class="card-title">
-						<h3 class="text-secondary">Mr.Y2K</h3>
+						<h3 class="text-secondary">Y2theK</h3>
 
 					</div>
 				    <div class="card-subtitle">
-				    	<p class="text-secondary lead">Founder</p>
+				    	<p class="text-secondary lead">Founder, Poem Lover</p>
 				    </div>
 				    <div class="float-end">
-				    	<a href="#" target="_blank"><i class="fab fa-facebook fa-2x text-primary mx-2"></i></a>
-				    	<a href="#" target="_blank"><i class="fab fa-twitter fa-2x text-info mx-2"></i></a>
-				    	<a href="#" target="_blank"><i class="fab fa-youtube fa-2x  text-danger mx-2"></i></a>
+				    	<a href="#"><i class="fab fa-facebook fa-2x text-primary mx-2"></i></a>
+				    	<a href="#" ><i class="fab fa-twitter fa-2x text-info mx-2"></i></a>
+				    	<a href="#" ><i class="fab fa-youtube fa-2x  text-danger mx-2"></i></a>
 				    </div>
 				</div>
 			</div>
 		</div>
 		<div class="col-lg-4 col-sm-10 mx-auto my-4">
 				<div class="card rounded-0">
-				<img src="./assets/img/team/tgno3.jpeg" class="img-thumbnail" alt="tgno"/>
+				<img src="./assets/img/team/tgno.jpg" class="img-thumbnail" alt="tgno"/>
 				<div class="card-body" >
 					<div class="card-title">
-						<h3 class="text-secondary">Ms.Theingi</h3>
+						<h3 class="text-secondary">Theingi</h3>
 
 					</div>
 				    <div class="card-subtitle">
 				    	<p class="text-secondary lead">Project Manager, Editor</p>
 				    </div>
 				    <div class="float-end">
-				    	<a href="#" target="_blank"><i class="fab fa-facebook fa-2x text-primary mx-2"></i></a>
-				    	<a href="#" target="_blank"><i class="fab fa-twitter fa-2x text-info mx-2"></i></a>
-				    	<a href="#" target="_blank"><i class="fab fa-youtube fa-2x text-danger mx-2"></i></a>
+				    	<a href="#" ><i class="fab fa-facebook fa-2x text-primary mx-2"></i></a>
+				    	<a href="#" ><i class="fab fa-twitter fa-2x text-info mx-2"></i></a>
+				    	<a href="#" ><i class="fab fa-youtube fa-2x text-danger mx-2"></i></a>
 				    </div>
 				</div>
 			</div>
@@ -729,45 +801,45 @@
 	</section>
 
 <!-- Start Contact Section -->
-<section class="bg-dark " id="contact">
-	<div class="container-fluid">
+<section class=" " id="contact">
+	<div class="container-fluid contact">
 		<!-- start title -->
-		<div class="col-12 text-center">
-			<h1 class="text-light display-5 pt-4">Reach Me</h1>
-			<p class="text-secondary lead">The address is on your hand, Stay Connected!</p>
-		</div>
+		
+			<h1 class="section-title">Reach Me</h1>
+			<p class="text-center lead text-muted">The address is on your hand, Stay Connected!</p>
+	
 		<!-- end title -->
 		<div class="row">
-			<div class="col-lg-6 col-md-8 col-sm-10 mx-auto">
-				<div class="card rounded-0">
+			<div class="col-md-6 col-sm-10 mx-auto mb-5">
+				<div class="card rounded-0 ">
 					<h3 class="text-dark text-center mt-2">Office Location</h3>
 					<div class="card-body ">
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3700.9138433701564!2d96.08978351437506!3d21.9378633855131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cb6d61168aa7c1%3A0xcf1acb8f196c3bd6!2z4YCZ4YC84YCU4YC64YCZ4YCs4YCe4YCQ4YCE4YC64YC44YCh4YCB4YC74YCA4YC64YCh4YCc4YCA4YC64YCU4YCK4YC64YC44YCV4YCK4YCs4YCQ4YCA4YC54YCA4YCe4YCt4YCv4YCc4YC6!5e0!3m2!1smy!2smm!4v1623047619690!5m2!1smy!2smm" style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>
 					</div>
 					<div class="card-footer">
 						<p>Phone : 09791234456</p>
-						<p>Emai : yeyintkyaw300@gmail.com</p>
+						<p>Email : yeyintkyaw300@gmail.com</p>
 						<p>Address : Mandalay</p>
 					</div>
 				</div>
 			</div>
 
-			<div class="col-lg-6 col-md-8 col-sm-10 mx-auto m-4">
-				<div class="text-center text-light">
+			<div class="col-md-6 col-sm-10 mx-auto ">
+				<div class="text-center text-dark">
 					<h3>Give Feedback </h3>
 					<p class="text-secondary lead">Improve our community by sending feedback!</p>
 				</div>
 				<form action="" method="">
 					<div class="col-md-12 mb-3">
-						<label for="name" class="text-light">Name</label>
+						<label for="name" class="">Name</label>
 						<input type="text" name="name" id="name" class="form-control form-control-sm rounded-0" placeholder="Enter your name">
 					</div>
 					<div class="col-md-12 mb-3">
-						<label for="email" class="text-light">Email</label>
-						<input type="text" name="name" id="name" class="form-control form-control-sm rounded-0" placeholder="Enter your email">
+						<label for="email" class="">Email</label>
+						<input type="text" name="email" id="email" class="form-control form-control-sm rounded-0" placeholder="Enter your email">
 					</div>
 					<div class="col-md-12 mb-3">
-						<label for="Message" class="text-light">Comment</label>
+						<label for="Message" class="">Comment</label>
 						<textarea name="message" id="message" class="form-control rounded-0" placeholder="Enter your comment" rows="5"></textarea>
 					</div>
 					<div class="d-grid">
@@ -789,26 +861,51 @@
 
 
 <!-- Start Footer Section -->
-<section class="">
 
-	<footer class="bg-secondary ">
-		<div class="container-fluid">
-			<div class="col-12 text-center">
-				<h3 class="text-light fw-light pt-4" style="font-variant: small-caps;">Year 2000 Poemidio</h3>
-				<h5 class="fst-italic text-light fw-light">presented by Y2K</h5>
-				<div class="py-3">
-					<a href="#" target="_blank"><i class="fab fa-facebook fa-2x text-primary mx-3"></i></a>
-					<a href="#" target="_blank"><i class="fab fa-youtube fa-2x text-danger mx-3"></i></a>
-					<a href="#" target="_blank"><i class="fab fa-twitter fa-2x text-info mx-3"></i></a>
-					<a href="#" target="_blank"><i class="fab fa-google-plus fa-2x text-danger mx-3"></i></a>
+
+	<footer class="" id="footer">
+		<div class="container-fluid footer" >
+			<div class="row">
+				
+				<div class="col-md-2">
+					<h5 class="lead">Poemidio</h5>
+					<!-- <p>erferendis ducimus magnam aperiam, quasi nobis facilis expedita quod adipisci officiis mollitia aspernatur! Repellendus iure voluptatum reiciendis!</p> -->
 				</div>
-				<p class="text-light m-0">&copy;Copyright 2021 - Made by Year 2000 Co.,Ltd</p>
+			
+				<div class="col-md-3 mt-3">
+					<h5 class="lead">About Poemidio</h5>
+					<div class="links">
+						<a href="#home">Home</a>
+						<a href="#about">About</a>
+						<a href="#team">Team</a>
+					</div>
+				</div>
+				<div class="col-md-3 ">
+					<h5 class="lead">Product</h5>
+					<div class="links">
+						<a href="#ebooks">Ebooks</a>
+						<a href="#poems">Poem Cards</a>
+					</div>
+				</div>
+				<div class="col-md-4 mt-3">
+					<h5 class="lead">Ready for Poemidio?</h5>
+					<form action="" class="form">
+						<div class="form-group">
+							<input type="text" name="email" placeholder="Subscribe our news letter" class="form-control">
+							<input type="submit" class="btn btn-info mt-3 mr-5">
+							</div>
+					</form>
+
+					
+					</div>
+				</div>
+				
 			</div>
 		</div>
 
 
 	</footer>
-</section>
+
 
 
 
@@ -865,36 +962,6 @@
 	</div>
 </div>
 
-
-
-<!-- modal for login -->
-<div class="modal" id="logInModal">
-	<div class="modal-dialog modal-dialog-centered modal-sm" tabindex="1">
-		<div class="modal-content">
-			<div class="modal-header">
-				<div class="modal-title"><h5>Login Here</h5></div>
-				<button class="btn-close btn-danger" data-bs-dismiss="modal"></button>
-			</div>
-			<div class="modal-body">
-				<div class="col-12">
-					<form action="" method="">
-						<label for="email">Email</label>
-						<input type="email" name="email" id="email" class="form-control form-control-sm rounded-0" required>
-						<label for="password">Password</label>
-						<input type="password" name="password" id="password" class="form-control form-control-sm rounded-0" required>
-						<div class="d-flex justify-content-end">
-							<button class="btn btn-outline-dark btn-sm rounded-0 mt-3 mx-2">Cancel</button>
-						<button class="btn btn-info btn-sm rounded-0 mt-3 mx-2">Login</button>
-						</div>
-					</form>
-				</div>
-			</div>
-			<div class="modal-footer">Not Registered? : <a href="#">SignUp Here</a></div>
-		</div>
-	</div>
-</div>
-
-
 <!-- end modal -->
 
 <!-- libs for bootstrap css1 js2 -->
@@ -914,84 +981,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- <script type="text/javascript" src="./assets/jquery/jquery.js"></script> -->
 
-<script type="text/javascript">
+<script type="text/javascript" src="/assets/js/app.js"> </script>
 
 
-	$(document).ready(function(){
-		console.log("Hello");
-		let current = 0;
-			$("#page1").show();
-			$("#p1").css("background","#42ba96");
-			$("#page2").hide();
-			$("#page3").hide();
-			$("#page4").hide();
 
-		$("#p1").click(function(){
-			$("#page2").hide(1000);
-			$("#page3").hide(1000);
-			$("#page4").hide(1000);
-			
-			$("#page1").show(1000);
-
-			$("#p2").css("background","none");
-			$("#p3").css("background","none");
-			$("#p4").css("background","none");
-			$("#p1").css("background","#42ba96");
-			current = 1;
-
-		});
-
-		$("#p2").click(function(){
-			$("#page1").hide(1000);
-			$("#page3").hide(1000);
-			$("#page4").hide(1000);
-			
-			// $("#page2").slideUp(1000);
-			$("#page2").show(1000);
-
-			$("#p1").css("background","none");
-			$("#p3").css("background","none");
-			$("#p4").css("background","none");
-			$("#p2").css("background","#42ba96");
-			current = 2;
-
-		});
-
-		$("#p3").click(function(){
-			$("#page1").hide(1000);
-			$("#page2").hide(1000);
-			$("#page4").hide(1000);
-			
-			$("#page3").show(1000);
-
-			$("#p1").css("background","none");
-			$("#p2").css("background","none");
-			$("#p4").css("background","none");
-			$("#p3").css("background","#42ba96");
-			current = 3;
-			
-
-		});
-
-		$("#p4").click(function(){
-			$("#page1").hide(1000);
-			$("#page2").hide(1000);
-			$("#page3").hide(1000);
-			
-			$("#page4").show(1000);
-
-			$("#p1").css("background","none");
-			$("#p2").css("background","none");
-			$("#p3").css("background","none");
-			$("#p4").css("background","#42ba96");
-			current = 4;
-
-		});
-		
-	});
-	
-
-
-</script>
 </body>
 </html>
